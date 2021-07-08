@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muly", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background: linear-gradient(to bottom right, #bdc3c7, #2c3e50);
+}
+
+.container {
+  display: flex;
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+
+  h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    margin: 0;
+    opacity: 0;
+  }
+
+  &.active {
+    flex: 5;
+
+    h3 {
+      opacity: 1;
+      transition: opacity 0.3s ease-in 0.4s;
+    }
+  }
+}
+
+.panel-1 {
+  background-image: url("https://w.wallhaven.cc/full/kw/wallhaven-kwp2qq.jpg");
+}
+
+.panel-2 {
+  background-image: url("https://w.wallhaven.cc/full/96/wallhaven-963d68.jpg");
+}
+
+.panel-3 {
+  background-image: url("https://w.wallhaven.cc/full/r2/wallhaven-r2vr2j.jpg");
+}
+
+.panel-4 {
+  background-image: url("https://w.wallhaven.cc/full/kw/wallhaven-kwmxw1.jpg");
+}
+
+.panel-5 {
+  background-image: url("https://w.wallhaven.cc/full/13/wallhaven-137p31.jpg");
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 -25px 0;
+}
