@@ -83,14 +83,17 @@ body {
 
 .panel-1 {
   background-image: url("https://w.wallhaven.cc/full/kw/wallhaven-kwp2qq.jpg");
+  background-position: 70% 0%;
 }
 
 .panel-2 {
   background-image: url("https://w.wallhaven.cc/full/96/wallhaven-963d68.jpg");
+  background-position: 70% 0%;
 }
 
 .panel-3 {
   background-image: url("https://w.wallhaven.cc/full/r2/wallhaven-r2vr2j.jpg");
+  background-position: 58% 0%;
 }
 
 .panel-4 {
