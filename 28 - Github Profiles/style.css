@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#283e51), to(#4b79a1));
+  background: -webkit-linear-gradient(left, #283e51, #4b79a1);
+  background: -o-linear-gradient(left, #283e51, #4b79a1);
+  background: linear-gradient(to right, #283e51, #4b79a1);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.user-form {
+  width: 100%;
+  max-width: 700px;
+}
+
+.user-form input {
+  width: 100%;
+  display: block;
+  background: -webkit-gradient(linear, left top, right top, from(#4e54c8), to(#8f94fb));
+  background: -webkit-linear-gradient(left, #4e54c8, #8f94fb);
+  background: -o-linear-gradient(left, #4e54c8, #8f94fb);
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  border: none;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font-family: inherit;
+  font-size: 1rem;
+  -webkit-box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.user-form input::-webkit-input-placeholder {
+  color: #bbb;
+}
+
+.user-form input:-ms-input-placeholder {
+  color: #bbb;
+}
+
+.user-form input::-ms-input-placeholder {
+  color: #bbb;
+}
+
+.user-form input::placeholder {
+  color: #bbb;
+}
+
+.user-form input:focus {
+  outline: none;
+}
+
+.user-info {
+  color: #eee;
+  margin-left: 2rem;
+}
+
+.user-info h2 {
+  margin-top: 0;
+}
+
+.user-info ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  max-width: 400px;
+}
+
+.user-info ul li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user-info ul li strong {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.card {
+  max-width: 800px;
+  background: -webkit-gradient(linear, left top, right top, from(#4e54c8), to(#8f94fb));
+  background: -webkit-linear-gradient(left, #4e54c8, #8f94fb);
+  background: -o-linear-gradient(left, #4e54c8, #8f94fb);
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  -webkit-box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem;
+  margin: 0 1.5rem;
+}
+
+.avatar {
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 10px solid #8f94fb;
+  height: 150px;
+  width: 150px;
+}
+
+.repo {
+  text-decoration: none;
+  color: #fff;
+  background-color: #4e54c8;
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.repo:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 500px) {
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .user-form {
+    max-width: 400px;
+  }
+}
