@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#2b5876), to(#4e4376));
+  background: -webkit-linear-gradient(left, #2b5876, #4e4376);
+  background: -o-linear-gradient(left, #2b5876, #4e4376);
+  background: linear-gradient(to right, #2b5876, #4e4376);
+  font-family: "Poppins", sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 0;
+  padding-top: 3rem;
+}
+
+.add {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: -webkit-gradient(linear, left top, right top, from(#403a3e), to(#be5869));
+  background: -webkit-linear-gradient(left, #403a3e, #be5869);
+  background: -o-linear-gradient(left, #403a3e, #be5869);
+  background: linear-gradient(to right, #403a3e, #be5869);
+  color: #fff;
+  border: none;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.note {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  margin: 30px 20px;
+  width: 400px;
+  height: 400px;
+}
+
+.note .tools {
+  background: -webkit-gradient(linear, left top, right top, from(#403a3e), to(#be5869));
+  background: -webkit-linear-gradient(left, #403a3e, #be5869);
+  background: -o-linear-gradient(left, #403a3e, #be5869);
+  background: linear-gradient(to right, #403a3e, #be5869);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0.5rem;
+}
+
+.note .tools button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.note textarea {
+  outline: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+  border: none;
+  height: 400px;
+  width: 100%;
+  padding: 20px;
+}
+
+.main {
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
